@@ -2,8 +2,9 @@
 <title>CSS Grid Template 2</title>
 <style>
     @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
-    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-    
+    @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,900|Noto+Serif+KR&subset=korean);
+ 
+
 body { 
   display: grid;
   grid-template-areas: 
@@ -16,10 +17,18 @@ body {
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
+    
   background-image: url(1.png);
-  background-size:2600px;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
+
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+  /*background-color: pink;*/
+    
   }  
 header, footer, article, nav, div {
   padding: 1.2em;
@@ -45,47 +54,61 @@ header, footer, article, nav, div {
         color:chocolate;
         font-family: 'Hanna', sans-serif;
         text-decoration: none;
-        margin-left: 10px;
+        margin-left: 7%;
         margin-top : 20px;
     }
     a{
         text-decoration: none;
      }
     #menu{
-        margin-left: -30px;
-        margin-top: 60px;
+        position: relative;
+        left: 25%;
+        margin-top: 10%;
         
     }
     #menuf{
-        font-size: 40px;
-        color:dimgrey;
-        font-family: 'Jeju Gothic', sans-serif;
+        font-size: 30px;
+        color:black;
+        font-family: 'Noto Sans KR', sans-serif;
         text-decoration: none;
-        margin-left: 20px;
-        margin-top : 20px;
+        margin-left: 6%;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 4px;
     }
    
     
     #main{
-        margin-left: -700px;
-        margin-top: 400px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;
+        position: relative;
+        right: 30%;
+        margin-top: 22%;
         text-align: center;
-    }
-    #main img{
         
-        margin-left: 1200px;
-        margin-top: -400px;
     }
-    #main h1{
+    
+    #title{
         font-size: 60px;
+        font-weight: 500;
     }
     #main h2{
-        margin-top: -30px;
-        margin-bottom: 100px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        font-weight: 300;
     }
     #main p{
-        margin-left: 870px;
+        position: relative;
+        margin-top: -1%;
+        display: inline;
         text-align: left;
+    }
+    .main_img{
+        margin-left: 40%;
+        position: relative;
+        top: -500px;
     }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
@@ -100,13 +123,67 @@ header, footer, article, nav, div {
     grid-template-columns: 1fr;
  }
 }
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #black;
+  border-radius: 10px;
+  color: #black;
+  display:inline;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 2em auto;
+  padding: .5em 1.7em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: aliceblue;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+    
     
 </style>
 <body>
   
   <header id="pageHeader">
      
-      <a href="index.html"><span id="logof">다락방</span></a>
+      <a href="index.html"><span id="logof">LOGO</span></a>
       <div id="menu">
       <a href="#1.html"><span id="menuf">Gallery</span></a>
       <a href="#2.html"><span id="menuf">Profile</span></a>
@@ -116,17 +193,20 @@ header, footer, article, nav, div {
     </header>
   <article id="mainArticle">
       <div id="main">
-      <h1>다락방</h1>
+      <span id="title">다락방</span>
           <h2>‘나’의 즐거움을 ‘우리’와 함께하다</h2>
-          <p>이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑, 게임 AR 등<br>
-             다양한 분야의 작품들이 담긴 공간을 통해 다락방이 지닌 즐거움과 아늑함을 선사합니다.<br>
-             뉴미디어콘텐츠의 특징상 지면에 충분히 표현할 수 없는 부분들이 많아 <br>
-             아쉽지만 작품들의 특징이 잘 나타나도록 최대한 노력했습니다.<br>
-             다락방과 함께 추억을 떠올리며, 마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.
+          <p>이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑 등<br>
+             다양한 분야의 작품들이 담긴 공간을 통해 다락방이 지닌 즐거움과<br>
+             아늑함을 선사합니다. 뉴미디어콘텐츠의 특징상 지면에 충분히<br>
+             표현할 수 없는 부분들이 많아 아쉽지만 작품들의 특징이 잘<br>
+             나타나도록 최대한 노력했습니다. 다락방과 함께 추억을 떠올리며,<br>
+              마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.<br>
           </p>
-         <img src="main.jpg"> 
+          
+  <a href="index.html"><button class="btn-5">전시 보러가기</button></a>
+         
           </div>
-      
+      <span class="main_img"><img src="main.jpg"></span> 
       
     </article>
   <nav id="mainNav"></nav>
