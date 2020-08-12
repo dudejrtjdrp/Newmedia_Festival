@@ -1,55 +1,136 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>NEWMEDIA FESTIVAL 2019</title>
-  <meta charset="utf-8" />
+<!doctype html>
+<title>CSS Grid Template 2</title>
+<style>
+    @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
     
-    <style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 200px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  background-image: url(1.png);
+  background-size:2600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
     
-    .container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 
-        [left-navbar-start] 20%
-        [left-navbar-end content-start] 60%
-        [content-end right-sidebar-start] 20%
-        [right-sidebar-end];
-    grid-template-rows: 
-        [body-start] 80%
-        [body-end footer-start] 20%
-        [footer-end];
-        background-color: #FEFFE6;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+    #logof{
+        font-size: 70px;
+        color:chocolate;
+        font-family: 'Hanna', sans-serif;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top : 20px;
+    }
+    a{
+        text-decoration: none;
+     }
+    #menu{
+        margin-left: -30px;
+        margin-top: 60px;
         
+    }
+    #menuf{
+        font-size: 40px;
+        color:dimgrey;
+        font-family: 'Jeju Gothic', sans-serif;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-top : 20px;
+    }
+   
+    
+    #main{
+        margin-left: -700px;
+        margin-top: 400px;
+        text-align: center;
+    }
+    #main img{
+        
+        margin-left: 1200px;
+        margin-top: -400px;
+    }
+    #main h1{
+        font-size: 60px;
+    }
+    #main h2{
+        margin-top: -30px;
+        margin-bottom: 100px;
+    }
+    #main p{
+        margin-left: 870px;
+        text-align: left;
+    }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
 }
-        .content img{
-            margin-top: 500px;
-            margin-left: 800px;
-            /*border: 10px solid yellow; */
-            border-radius: 15px 15px 15px 15px;
-        }
-        .footer{
-            background-color: aliceblue;
-            
-        }
-
-    </style>
     
-    
-</head>
-
+</style>
 <body>
   
-    <div class="container">
-        <div class="left-navbar"></div>
-        <div class="content">
-            <img src="main.jpg">
-        
-        </div>
-        
-        <div class="right-sidebar"></div>
-        <div class="footer"></div>
+  <header id="pageHeader">
+     
+      <a href="index.html"><span id="logof">다락방</span></a>
+      <div id="menu">
+      <a href="#1.html"><span id="menuf">Gallery</span></a>
+      <a href="#2.html"><span id="menuf">Profile</span></a>
+      <a href="#3.html"><span id="menuf">Contact</span></a>
     </div>
-
-
+    
+    </header>
+  <article id="mainArticle">
+      <div id="main">
+      <h1>다락방</h1>
+          <h2>‘나’의 즐거움을 ‘우리’와 함께하다</h2>
+          <p>이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑, 게임 AR 등<br>
+             다양한 분야의 작품들이 담긴 공간을 통해 다락방이 지닌 즐거움과 아늑함을 선사합니다.<br>
+             뉴미디어콘텐츠의 특징상 지면에 충분히 표현할 수 없는 부분들이 많아 <br>
+             아쉽지만 작품들의 특징이 잘 나타나도록 최대한 노력했습니다.<br>
+             다락방과 함께 추억을 떠올리며, 마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.
+          </p>
+         <img src="main.jpg"> 
+          </div>
+      
+      
+    </article>
+  <nav id="mainNav"></nav>
+  <div id="siteAds"></div>
+  <footer id="pageFooter"></footer>
+    
 </body>
-</html>
