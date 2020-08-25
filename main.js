@@ -1,3 +1,8 @@
+/*jslint devel: true */
+/* eslint-disable no-console */
+/*eslint no-undef: "error"*/
+/*eslint-env node*/
+
 var http = require('http');
 var fs = require('fs');
 var app = http.createServer(function (request, response) {
