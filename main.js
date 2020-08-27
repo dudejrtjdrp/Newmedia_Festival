@@ -3,10 +3,10 @@
 /*eslint no-undef: "error"*/
 /*eslint-env node*/
 
-var http = require('http');
-var fs = require('fs');
-var app = http.createServer(function (request, response) {
-    var url = request.url;
+const http = require('http');
+const fs = require('fs');
+const app = http.createServer(function (request, response) {
+    let url = request.url;
     if (request.url == '/') {
         url = '/index.html';
     }
