@@ -1,21 +1,21 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>NEWMEDIA FESTIVAL 2019</title>
 
 
     <style>
-        html,
         body {
             justify-content: center;
-            height: 100%;
+            height: 100vh;
             align-items: center;
         }
 
         .heade {
             width: inherit;
-            height: 100px;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -31,7 +31,7 @@
 
         .main {
             display: flex;
-            height: 100%;
+            height: 100vh;
             justify-content: center;
             flex-wrap: wrap;
 
@@ -39,23 +39,42 @@
 
         .contents {
             display: grid;
-            grid-template-columns: 300px 300px;
-            grid-template-rows: 570px 570px;
-            grid-column-gap: 150px;
-            grid-row-gap: 50px;
+            grid-template-columns: 300px 550px;
+            grid-template-rows: 300px 300px;
+            grid-row-gap: 200px;
+            grid-column-gap: 20px;
             grid-auto-rows: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
             /*margin-bottom: 20px;*/
         }
 
         .content {
             display: flex;
-            width: 300px;
-            height: 570px;
+            width: 550px;
+            height: 300px;
             background: white;
-            border: 2px solid black;
-            margin: 10px;
+            /* border: 2px solid black; */
+            margin: 0px;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .content1 {
+            display: flex;
+            width: 300px;
+            height: 300px;
+
+            margin: 0px;
             justify-content: center;
             align-content: center;
+            vertical-align: top;
+            text-align: left;
+
+        }
+
+        .content1 img {
+            width: 300px;
         }
 
         .nav ul {
@@ -87,7 +106,7 @@
         }
 
         .title {
-            display: flex;
+            display: inline-block;
             justify-content: left;
             align-content: left;
             margin-top: 10px;
@@ -97,39 +116,26 @@
         }
 
         .maker {
-            display: flex;
+            display: inline-block;
             justify-content: left;
             align-content: left;
-            margin-top: 10px;
+            margin-top: 30px;
             margin-left: 10px;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 600;
             opacity: 40%;
         }
 
         .introduction {
-            display: flex;
+            display: inline-block;
             justify-content: left;
             align-content: left;
-            margin-top: 10px;
+            margin-top: 30px;
             margin-left: 10px;
             margin-right: 10px;
-            font-size: 15px;
-            font-weight: 400;
-        }
+            font-size: 20px;
+            font-weight: 300;
 
-        .content1 {
-            display: flex;
-            width: 300px;
-            height: 570px;
-            background: white;
-            margin: 10px;
-            justify-content: center;
-            align-content: center;
-        }
-
-        .content1 img {
-            width: 300px;
         }
     </style>
 </head>
@@ -157,13 +163,18 @@
         </div>
         <div class="contents">
             <div class="content1">
-                <a href="#">
-                    <img src="13.jpeg">
+                <a href="#gallery1.html">
+                    <img src="insta/1.jpeg">
+                </a>
+            </div>
+            <a href="#gallery1.html">
+                <div class="content">
+
                     <div class="title">
-                        다락방
+                        다락방 포스터
                     </div>
                     <div class="maker">
-                        이성효, 안시운, 김성도
+                        김여진 김지수
                     </div>
                     <div class="introduction">
                         이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑 등
@@ -173,38 +184,290 @@
                         나타나도록 최대한 노력했습니다. 다락방과 함께 추억을 떠올리며,
                         마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.
                     </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="#gallery13.html">
+                    <img src="insta/11.jpeg">
                 </a>
             </div>
+            <a href="#gallery13.html">
+                <div class="content">
+                    <div class="title">
+                        다락방 홍보영상
+                    </div>
+                    <div class="maker">
+                        구창승 안재현 이성효
+                    </div>
+                    <div class="introduction">
+                        이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑 등
+                        다양한 분야의 작품들이 담긴 공간을 통해 다락방이 지닌 즐거움과
+                        아늑함을 선사합니다. 뉴미디어콘텐츠의 특징상 지면에 충분히
+                        표현할 수 없는 부분들이 많아 아쉽지만 작품들의 특징이 잘
+                        나타나도록 최대한 노력했습니다. 다락방과 함께 추억을 떠올리며,
+                        마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                2
+                <a href="#gallery2.html">
+                    <img src="insta/10.png">
+                </a>
             </div>
+            <a href="#gallery2.html">
+                <div class="content">
+                    <div class="title">
+                        소행성
+                    </div>
+                    <div class="maker">
+                        김민영
+                    </div>
+                    <div class="introduction">
+                        당신의 행복은 무엇인가요?<br>
+                        대답하기까지 시간이 필요했다면<br>
+                        행복을 아주 거창한 것으로 생각하고 있진 않으신가요?<br>
+                        저의 작지만 소중한 행복들이 담긴 소행성(小幸星)을
+                        <br>당신과 공유할게요.<br>
+                        <br>
+                        지금, 당신의 소행성에는 무엇이 있나요?
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                3
-            </div>
+                <a href="#gallery3.html">
+                    <img src="insta/7.png">
+                </a>
+            </div><a href="#gallery3.html">
+                <div class="content">
+                    <div class="title">
+                        집주인 <p style="display: inline; font-size: 20px;">럭키 : Knock on the Door!</p>
+                    </div>
+                    <div class="maker">
+                        박선빈 김진선 오지민
+                    </div>
+                    <div class="introduction">
+                        똑똑!<br><br>
+
+당신의 참여로 완성되는 인터랙티브 웹사이트입니다.<br>
+마우스를 따라 행운의 다락방으로 입장하세요.<br><br>
+
+이 방을 방문하는 당신에게 행운이 깃들길.<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                4
-            </div>
+                <a href="#gallery4.html">
+                    <img src="insta/9.png">
+                </a>
+            </div><a href="#gallery4.html">
+                <div class="content">
+                    <div class="title">
+                        아보캣도의 모험
+                    </div>
+                    <div class="maker">
+                        이정민
+                    </div>
+                    <div class="introduction">
+                        우주선에 문제가 생겨 지구에 불시착하게 된 외계 고양이 아보캣도!<br><br>
+아보캣도는 뿔뿔이 흩어진 친구들을 찾기 위한 모험을 시작합니다.<br><br>
+
+아보캣도와 함께 픽셀 속으로 즐거운 모험을 떠나보세요.<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                5
-            </div>
+                <a href="#gallery5.html">
+                    <img src="insta/4.png">
+                </a>
+            </div><a href="#gallery5.html">
+                <div class="content">
+                    <div class="title">
+                        <p style="display: inline; font-size: 25px;">R=VD : Reminiscenece = V-CON * Dreamy</p>
+                    </div>
+                    <div class="maker">
+                        V-CON
+                    </div>
+                    <div class="introduction">
+                        여러분이 꿈꾸는 다락방에 <br>
+요술램프가 있는 상상을 해본 적 있나요?<br>
+영화 ‘알라딘’의 요술램프를 모티브로 제작한 <br>
+'Media-Facade 포토존'과 'AR 체험존'<br>
+당신이 꿈꾸는 대로 이루어질 거예요.<br>
+DREAMS COME TRUE with V-CON<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                6
-            </div>
+                <a href="#gallery6.html">
+                    <img src="insta/5.png">
+                </a>
+            </div><a href="#gallery6.html">
+                <div class="content">
+                    <div class="title">
+                        발자국
+                    </div>
+                    <div class="maker">
+                        삼자통일
+                    </div>
+                    <div class="introduction">
+                        당신의 오늘은 행복하셨나요?<br>
+                        삼자통일이 준비한 ‘발자국’을 통해<br>
+                        당신의 숨겨진 추억을 회상해보는 건 어떨까요<br>
+                        힘들고 고된 삶을 살아왔지만<br>
+                        그래도 당신의 인생은 항상 행복했을거예요.<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                7
-            </div>
+                <a href="#gallery7.html">
+                    <img src="insta/6.png">
+                </a>
+            </div><a href="#gallery7.html">
+                <div class="content">
+                    <div class="title">
+                        MVP <p style="display: inline; font-size: 20px;">Mural Village</p>
+                    </div>
+                    <div class="maker">
+                        이성효 이유진 한희주
+                    </div>
+                    <div class="introduction">
+                        당신의 지친 퇴근길을 밝게 비춰줄 움직이는 벽화!<br><br>
+
+노후되어 빛을 잃어가는 그림벽화에 미디어파사드를 통해<br>
+                    숨을 불어넣었습니다. 다락방에서 느낄 수 있는 따스함을 담은 벽화, 사계절이 변하는 모습과 함께 추억 속으로 빠져보는 것은 어떨까요?
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                8
-            </div>
+                <a href="#gallery8.html">
+                    <img src="insta/2.png">
+                </a>
+            </div><a href="#gallery8.html">
+                <div class="content">
+                    <div class="title">
+                        은하단
+                    </div>
+                    <div class="maker">
+                        꿈 틀
+                    </div>
+                    <div class="introduction">
+                        아늑한 다락방에 꾸며놓은 우리만의 작은 영화관!<br><br>
+
+                        영화와 함께했던 추억을 떠올리며 ‘꿈’을 바라보는 미디어 아트<br>
+                        작품입니다. 영상에 등장하는 영화 속 주인공들과 함께<br>
+                        ‘성장’하는 우리의 모습을 그려볼까요?<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                9
-            </div>
+                <a href="#gallery9.html">
+                    <img src="insta/8.png">
+                </a>
+            </div><a href="#gallery9.html">
+                <div class="content">
+                    <div class="title">
+                        개인에 대한 <p style="display: inline; font-size: 20px;">For personal_PUZZLE</p>
+                    </div>
+                    <div class="maker">
+                        PUZZLE
+                    </div>
+                    <div class="introduction">
+                        “톡톡 튀는 개성을 만나보세요!”<br>
+‘16’명이 함께 모여 만든 단 한 개의 작품.<br><br>
+
+개인이 가지고 있는 이야기들을 <br>
+개성있는 모션그래픽을<br>
+활용한 하나의 영상으로 들려드려요!<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                10
-            </div>
+                <a href="#gallery10.html">
+                    <img src="insta/3.png">
+                </a>
+            </div><a href="#gallery10.html">
+                <div class="content">
+                    <div class="title">
+                        UNKNOWN BOX
+                    </div>
+                    <div class="maker">
+                        PIKNIC
+                    </div>
+                    <div class="introduction">
+                        반복되는 일상에 지친 당신이 잠시나마 쉬어갈 수 있도록.<br><br>
+
+                        여러분은 어떤 여행을 좋아하시나요?<br><br>
+
+                        영상을 통해 자신이 원하는 여행을 선택해보세요!<br>
+                    </div>
+                </div>
+            </a>
             <div class="content">
-                11
-            </div>
+                <a href="#gallery11.html">
+                    <img src="insta/1.png">
+                </a>
+            </div><a href="#gallery11.html">
+                <div class="content">
+                    <div class="title">
+                        무한
+                    </div>
+                    <div class="maker">
+                        김찬주
+                    </div>
+                    <div class="introduction">
+                        “너는 소중한 사람이야”<br>
+                        “너 자신을 잃지 마”<br><br>
+
+                        그동안 잠들었던 마음 속 다락방에 다시 불을 켜주세요.<br>
+                        방법은 거울에 비친 당신에게<br>
+                        ‘나만을 위한 이야기’를 해주는 것입니다.<br>
+                        통로 끝 당신의 미래는 찬란하게 빛날 거예요.<br>
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="#gallery12.html">
+                    <img src="insta/11.png">
+                </a>
+            </div><a href="#gallery12.html">
+                <div class="content">
+                    <div class="title">
+                        잡동사니
+                    </div>
+                    <div class="maker">
+                        임지은
+                    </div>
+                    <div class="introduction">
+                        어린 시절 꿈의 공간이던 ‘다락방’의 숨겨진 뒷이야기<br>
+잡동사니들의 추억 이야기를 담은 짧은 동화속으로 초대합니다.<br><br>
+                        어린 시절 동화를 보듯이 감상해주세요.<br>
+다 큰 어른이 되었지만 옛날에 느꼈던 동심을<br>
+다시 한 번 느낄 수 있습니다. <br>
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="#gallery14.html">
+                    <img src="insta/12.jpeg">
+                </a>
+            </div><a href="#gallery14.html">
+                <div class="content">
+                    <div class="title">
+                        다락방 메이킹
+                    </div>
+                    <div class="maker">
+
+                    </div>
+                    <div class="introduction">
+                        이번 전시회는 인터랙티브 미디어아트, 홀로그램, 프로젝션 맵핑 등
+                        다양한 분야의 작품들이 담긴 공간을 통해 다락방이 지닌 즐거움과
+                        아늑함을 선사합니다. 뉴미디어콘텐츠의 특징상 지면에 충분히
+                        표현할 수 없는 부분들이 많아 아쉽지만 작품들의 특징이 잘
+                        나타나도록 최대한 노력했습니다. 다락방과 함께 추억을 떠올리며,
+                        마음껏 상상하고 꿈꿀 수 있는 시간이 되길 바라봅니다.
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </body></html>
