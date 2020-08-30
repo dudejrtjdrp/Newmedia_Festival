@@ -51,13 +51,8 @@
         #content-area {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             align-items: center;
-        }
-
-        .grid_area {
-            /*    background-color: aliceblue; */
-
         }
 
         a {
@@ -100,7 +95,6 @@
 
         button {
             background: none;
-            border: 3px solid #black;
             border-radius: 10px;
             color: #BA4146;
             display: inline;
@@ -129,7 +123,6 @@
         }
 
         .gallery-btn::after {
-            /*background-color: #f00;*/
             height: 100%;
             left: -35%;
             top: 0;
@@ -155,7 +148,7 @@
 
             .area {
                 display: grid;
-                grid grid-template-rows: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 align-items: center;
                 align-content: center;
             }
@@ -234,8 +227,6 @@
             }
 
             button {
-
-                border: 8vw solid #black;
                 border-radius: 1vw;
                 color: #BA4146;
                 display: inline;
