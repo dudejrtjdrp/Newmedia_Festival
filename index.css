@@ -85,15 +85,15 @@
             font-weight: 600;
         }
 
-        button,
-        button::after {
+        .gallery-btn,
+        .gallery-btn::after {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s;
         }
 
-        button {
+        .gallery-btn {
             background: none;
             border-radius: 10px;
             color: #BA4146;
@@ -106,15 +106,15 @@
             text-transform: uppercase;
         }
 
-        button::before,
-        button::after {
+        .gallery-btn::before,
+        .gallery-btn::after {
             background: #FFE66B;
             content: '';
             position: absolute;
             z-index: -1;
         }
 
-        button:hover {
+        .gallery-btn:hover {
             color: #BA4146;
         }
 
@@ -226,7 +226,7 @@
                 font-weight: 600;
             }
 
-            button {
+            .gallery-btn {
                 border-radius: 1vw;
                 color: #BA4146;
                 display: inline;
