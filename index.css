@@ -1,240 +1,237 @@
  @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
-        @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,900|Noto+Serif+KR&subset=korean);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,900|Noto+Serif+KR&subset=korean);
 
-        html body area {
-            width: 100vw;
-            height: 100vh;
-        }
-        
-        .logo {
-            font-size: 9vw;
-            font-weight: 700;
-            margin-left: -4vw;
-            margin-top: 5vw;
-            display: inline-block;
-            letter-spacing: 2vw;
-        }
+html body area {
+    width: 100vw;
+    height: 100vh;
+}
 
-        ul {
-            display: inline-block;
-            list-style: none;
-            margin-left: 0vw;
-            margin-bottom: 4.1vh;
-            letter-spacing: 0.5vw;
-            color: #BA4146;
-            width: 50vw;
-        }
+.logo {
+    font-size: 9vw;
+    font-weight: 700;
+    margin-left: -4vw;
+    margin-top: 5vw;
+    display: inline-block;
+    letter-spacing: 2vw;
+}
 
-        li {
-            word-spacing: 0.6vw;
-            padding: 0 0 0 0;
-            border: 0;
-            float: left;
-            font-size: 1.5vw;
-            font-weight: 900;
-        }
+ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0vw;
+    margin-bottom: 4.1vh;
+    letter-spacing: 0.5vw;
+    color: #BA4146;
+    width: 50vw;
+}
 
-        body {
-            display: grid;
-            grid-template-columns: 1fr 8fr 1fr;
-            grid-template-rows: 2.5fr 3fr 2.5fr;
-            width: 100vw;
-            height: 100vh;
-            background-image: url(background.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            margin: 0;
-        }
+li {
+    word-spacing: 0.6vw;
+    padding: 0 0 0 0;
+    border: 0;
+    float: left;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
 
-
-        #content-area {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #BA4146;
-        }
-
-        #main {
-            font-family: 'Noto Sans KR', sans-serif;
-            margin-top: 5.2vw;
-            margin-right: 7.5vw;
-            text-align: center;
-            color: #BA4146;
-            letter-spacing: .07vw;
-        }
+body {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 2.5fr 3fr 2.5fr;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0;
+}
 
 
-        #main h2 {
-            font-size: 1.7vw;
-            margin-bottom: 4vh;
-            font-weight: 500;
+#content-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
 
-        }
+a {
+    text-decoration: none;
+    color: #BA4146;
+}
 
-        #main p {
-            font-size: 1.1vw;
-            display: inline;
-            text-align: left;
-            line-height: 3.6vh;
-            font-weight: 600;
-        }
-
-        .gallery-btn,
-        .gallery-btn::after {
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            -o-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-
-        .gallery-btn {
-            background: none;
-            border-radius: 10px;
-            color: #BA4146;
-            display: inline;
-            font-size: 1.6em;
-            font-weight: 900;
-            margin: 2em auto;
-            padding: .5em 1.7em;
-            position: relative;
-            text-transform: uppercase;
-        }
-
-        .gallery-btn::before,
-        .gallery-btn::after {
-            background: #FFE66B;
-            content: '';
-            position: absolute;
-            z-index: -1;
-        }
-
-        .gallery-btn:hover {
-            color: #BA4146;
-        }
-
-        .gallery-btn {
-            overflow: hidden;
-        }
-
-        .gallery-btn::after {
-            height: 100%;
-            left: -35%;
-            top: 0;
-            transform: skew(50deg);
-            transition-duration: 0.6s;
-            transform-origin: top left;
-            width: 0;
-        }
-
-        .gallery-btn:hover:after {
-            height: 100%;
-            width: 135%;
-        }
-
-        @media screen and (max-width: 1000px) {
-
-            body {
-                padding-top: 5vh;
-                background-color: #FFC08B;
-                background-image: none;
-                margin: 0 0 0 0;
-            }
-
-            .area {
-                display: grid;
-                grid-template-rows: 1fr 1fr;
-                align-items: center;
-                align-content: center;
-            }
-
-            .logo {
-                font-size: 16.5vw;
-                font-weight: 700;
-                display: inline-block;
-                margin-left: 0%;
-                margin-top: 0%;
-                text-align: center;
-            }
-
-            ul {
-                display: inline-block;
-                list-style: none;
-                margin-top: 5vh;
-                margin-bottom: 5vh;
-                letter-spacing: 1vw;
-                color: #BA4146;
-                width: auto;
-                float: left;
-                text-align: center;
-                margin-left: 0;
-                padding-left: 0;
-            }
-
-            li {
-                display: inline-block;
-                margin: 0 auto;
-                word-spacing: 4vw;
-                padding: 0 0 0 0;
-                border: 0;
-                font-size: 4vw;
-                font-weight: 900;
-                text-align: center;
-                float: none;
-            }
-
-            #content-area {
-                display: inline-block;
-                width: 100vw;
-                align-content: center;
-                align-items: center;
-                text-align: center;
-                align-self: center;
-            }
-
-            .grid_area {
-                display: inline-block;
-                width: 75vw;
-                text-align: center;
-            }
-
-            #main {
-                font-family: 'Noto Sans KR', sans-serif;
-                margin-top: 0;
-                margin-right: 0;
-                text-align: center;
-                color: #BA4146;
-            }
+#main {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 5.2vw;
+    margin-right: 7.5vw;
+    text-align: center;
+    color: #BA4146;
+    letter-spacing: .07vw;
+}
 
 
-            #main h2 {
-                font-size: 5vw;
-                margin-bottom: 7vw;
-                font-weight: 500;
-            }
+#main h2 {
+    font-size: 1.7vw;
+    margin-bottom: 4vh;
+    font-weight: 500;
 
-            #main p {
-                font-size: 4.5vw;
-                display: inline;
-                text-align: left;
-                line-height: 7vw;
-                font-weight: 600;
-            }
+}
 
-            .gallery-btn {
-                border-radius: 1vw;
-                color: #BA4146;
-                display: inline;
-                font-size: 4vw;
-                font-weight: 900;
-                margin: 10vw auto;
-                padding: 2.3vw 8vw;
-                position: relative;
-                text-transform: uppercase;
-            }
-        }
+#main p {
+    font-size: 1.1vw;
+    display: inline;
+    text-align: left;
+    line-height: 3.6vh;
+    font-weight: 600;
+}
+
+.gallery-btn,
+.gallery-btn::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gallery-btn {
+    background: none;
+    border-radius: 10px;
+    color: #BA4146;
+    display: inline;
+    font-size: 1.6em;
+    font-weight: 900;
+    margin: 2em auto;
+    padding: .5em 1.7em;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.gallery-btn::before,
+.gallery-btn::after {
+    background: #FFE66B;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.gallery-btn:hover {
+    color: #BA4146;
+}
+
+.gallery-btn::after {
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+}
+
+.gallery-btn:hover:after {
+    height: 100%;
+    width: 135%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        padding-top: 5vh;
+        background-color: #FFC08B;
+        background-image: none;
+        margin: 0 0 0 0;
+    }
+
+    .area {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logo {
+        font-size: 16.5vw;
+        font-weight: 700;
+        display: inline-block;
+        margin-left: 0%;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    ul {
+        display: inline-block;
+        list-style: none;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        letter-spacing: 1vw;
+        color: #BA4146;
+        width: auto;
+        float: left;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 auto;
+        word-spacing: 4vw;
+        padding: 0 0 0 0;
+        border: 0;
+        font-size: 4vw;
+        font-weight: 900;
+        text-align: center;
+        float: none;
+    }
+
+    #content-area {
+        display: inline-block;
+        width: 100vw;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+    }
+
+    .grid_area {
+        display: inline-block;
+        width: 75vw;
+        text-align: center;
+    }
+
+    #main {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-top: 0;
+        margin-right: 0;
+        text-align: center;
+        color: #BA4146;
+    }
+
+
+    #main h2 {
+        font-size: 5vw;
+        margin-bottom: 7vw;
+        font-weight: 500;
+    }
+
+    #main p {
+        font-size: 4.5vw;
+        display: inline;
+        text-align: left;
+        line-height: 7vw;
+        font-weight: 600;
+    }
+
+    .gallery-btn {
+        border-radius: 1vw;
+        color: #BA4146;
+        display: inline;
+        font-size: 4vw;
+        font-weight: 900;
+        margin: 10vw auto;
+        padding: 2.3vw 8vw;
+        position: relative;
+        text-transform: uppercase;
+    }
+}
